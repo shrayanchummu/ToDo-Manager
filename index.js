@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use('/api/tasks',require('./routes/taskRoutes'));
 app.use('/api/users',require('./routes/userRoutes'));
-// app.use('/api/subtasks',require('./routes/subtaskRoutes'));
+app.use('/api/subtasks',require('./routes/subtaskRoutes'));
 
 
 const port=process.env.PORT||3000

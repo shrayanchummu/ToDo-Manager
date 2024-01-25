@@ -11,8 +11,8 @@ const subtaskSchema=mongoose.Schema({
         required:[true,"Please enter a name for the subtask"]
     },
     status:{
-        type:Number,
-        enum: [0, 1], // Only allow 0 or 1 as values
+        type:String,
+        enum: ["0","1"], // Only allow 0 or 1 as values
         required:[true,"Please enter a valid status (0 for incomplete, 1 for complete)"]
     },
     created_at: {
