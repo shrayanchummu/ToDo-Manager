@@ -84,11 +84,11 @@ Visit [http://localhost:5050](http://localhost:5050) in your browser.
 
 - **Register User:**
   - `POST /api/user/register`
-  - Request Body: `{ "username": "your_username", "email": "your_email", "password": "your_password" }`
+  - Request Body: `{ "phone_number": "your_ph_number", "password": "your_password" }`
 
 - **Login User:**
   - `POST /api/user/login`
-  - Request Body: `{ "email": "your_email", "password": "your_password" }`
+  - Request Body: `{ "phone_number": "your_ph_number", "password": "your_password" }`
   - Response: `{ "accessToken": "your_access_token" }`
 
 - **Get Current User:**
